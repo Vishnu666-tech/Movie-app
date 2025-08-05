@@ -12,6 +12,7 @@ const DetailOF_movie = () => {
 
   useEffect(() => {
     sethideNav(false);
+    return () => sethideNav(true);
   }, [sethideNav]);
 
   if (selectedMovie.length === 0) {

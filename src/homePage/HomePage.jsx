@@ -3,16 +3,15 @@ import React, { useContext, useEffect, useState } from 'react'
 import { comedyMovies, imageUrl } from '../url/Url'
 
 import './HomePage.css'
+import { MovieContext } from '../App'
 
 const Home_page = ({ comedyArray, url, img }) => {
-
 
 
   const [randomMovie, setrandomMovie] = useState({})
 
 
-
-
+ 
 
 
   useEffect(() => {

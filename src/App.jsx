@@ -24,7 +24,7 @@ const AppMovie = () => {
   return (
     <MovieContext.Provider value={{ moviedetail, setmoviedetail, id, setid, sethideNav, search, setsearch, setsearchResult, searchResult }}>
       <BrowserRouter>
-        {hideNav && <Props_Nav />}
+        { hideNav && <Props_Nav />}
         <Routes>
           <Route path='/' element={<Home_page comedyArray={comedyArray} img={imageUrl} />} />
           <Route path='/comedy' element={<Card_movie url={comedyMovies} />} />

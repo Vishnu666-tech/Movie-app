@@ -80,16 +80,20 @@ const Props_Nav = () => {
         color: 'white',
         fontSize: '15px',
         fontFamily: 'unset'
+        
     };
 
     return (
         <Navbar expand="lg" className="navbar bg-body-tertiary">
             <Container fluid>
+                 
                 <Navbar.Brand href="#"><RiMovie2AiLine color='red' size={28} /> <Link className='link' to={'/'}>Movies</Link> </Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Toggle aria-controls="navbarScroll" className='toggle' />
+                
                 <Navbar.Collapse id="navbarScroll">
                     
-                    <Form className="d-flex">
+                    <div className="mx-auto" style={{ width: "40%" }}>
+                    <Form className="d-flex ">
                         <Form.Control
                             type="search"
                             placeholder="Search"
@@ -97,8 +101,9 @@ const Props_Nav = () => {
                             aria-label="Search"
                             onChange={handleSearch}
                         />
-                 
                     </Form>
+                    </div>
+
                     <Nav
                         className="ms-auto  "
                         

@@ -1,5 +1,5 @@
 .navbar{
-    background-color: #050505!important;
+    /* background-color: #050505!important; */
     background: linear-gradient(90deg, #0D1B2A 0%, #1A2639 100%) !important;
     
     padding: 1.5% 0;
@@ -11,6 +11,12 @@
     text-shadow: 10px 110px white;
     
 }
-.link :hover{
-    color: darkgoldenrod;
+
+.toggle{
+    color: blue;
+    background-color: #001f3f;
+}
+.navbar a.nav-link:hover {
+  
+  transform: scale(1.05); /* Slight zoom effect */
 }
