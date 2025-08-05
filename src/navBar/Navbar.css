@@ -1,0 +1,16 @@
+.navbar{
+    background-color: #050505!important;
+    background: linear-gradient(90deg, #0D1B2A 0%, #1A2639 100%) !important;
+    
+    padding: 1.5% 0;
+}
+.link {
+    text-decoration: none;
+    color: aquamarine;
+    font-size: 150%;
+    text-shadow: 10px 110px white;
+    
+}
+.link :hover{
+    color: darkgoldenrod;
+}
